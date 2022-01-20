@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43a8a6e444590514bb4b9f6a02112d0f",
+    "content-hash": "0145cdf5a79fa44ca723574a5743bc6f",
     "packages": [
         {
             "name": "brick/math",
@@ -361,6 +361,97 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "fshangala/auth2-ation",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "C:/Users/exsae/Documents/GitHub/auth2-ation",
+                "reference": "86c86eee37034117b06250947b84bfd839a3b7f0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Fshangala\\Auth2Ation\\": "src/"
+                }
+            },
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Funduluka Shangala",
+                    "email": "fshangala@gmail.com"
+                }
+            ],
+            "description": "Authentication and authorization system for laravel and lumen",
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
+            "name": "fshangala/cws",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "C:/Users/exsae/Documents/GitHub/cws",
+                "reference": "318a56c3e63e23970f0b0fed2e16330eb7024684"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fshangala\\Cws\\CwsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fshangala\\Cws\\": "src/"
+                }
+            },
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "fshangala",
+                    "email": "fshangala@gmail.com"
+                }
+            ],
+            "description": "A centralised wallet system to include in your project",
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
+            "name": "fshangala/faculty",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "C:/Users/exsae/Documents/GitHub/faculty",
+                "reference": "88aadc54aeab0aaaed109638446d0380d070d078"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Fshangala\\Faculty\\": "src/"
+                }
+            },
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Funduluka Shangala",
+                    "email": "fshangala@gmail.com"
+                }
+            ],
+            "description": "Faculty component of a school management system in lumen",
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "graham-campbell/result-type",
@@ -7087,7 +7178,11 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "fshangala/auth2-ation": 20,
+        "fshangala/cws": 20,
+        "fshangala/faculty": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
