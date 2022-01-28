@@ -76,6 +76,7 @@ $app->configure('app');
 //     App\Http\Middleware\ExampleMiddleware::class
 // ]);
 $app->middleware([
+    App\Http\Middleware\CorsMiddleware::class,
     Fshangala\Auth2Ation\Http\Middleware\Errors::class
 ]);
 
