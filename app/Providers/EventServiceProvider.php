@@ -12,8 +12,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        \App\Events\ExampleEvent::class => [
-            \App\Listeners\ExampleListener::class,
-        ],
+        \Fshangala\Faculty\Events\ProfileWasCreated::class => [
+            \App\Listeners\CreateUserWallet::class
+        ]
     ];
 }

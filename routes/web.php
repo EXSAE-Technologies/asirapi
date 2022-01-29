@@ -16,3 +16,10 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->group(['prefix'=>'/payments'],function($router){
+    $router->get('/all-wallets','PaymentsController@allWallets');
+    $router->get('/all-transactions','PaymentsController@allTransactions');
+    $router->get('/user-wallet','PaymentsController@getUserWallet');
+    $router->post('/bill-wallet','PaymentsController@billWallet');
+});

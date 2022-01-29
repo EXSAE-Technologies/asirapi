@@ -97,10 +97,12 @@ $app->routeMiddleware([
 
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
-// $app->register(App\Providers\EventServiceProvider::class);
+$app->register(App\Providers\EventServiceProvider::class);
 $app->register(Fshangala\Auth2Ation\Auth2AtionServiceProvider::class);
 $app->register(Fshangala\Auth2Ation\Auth\FAuthServiceProvider::class);
 $app->register(Fshangala\Faculty\FacultyServiceProvider::class);
+$app->register(Fshangala\Faculty\EventServiceProvider::class);
+$app->register(Fshangala\Cws\CwsServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
