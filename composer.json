@@ -2,7 +2,7 @@
     "name": "laravel/lumen",
     "description": "The Laravel Lumen Framework.",
     "keywords": ["framework", "laravel", "lumen"],
-    "license": "propriatory",
+    "license": "proprietary",
     "type": "library",
     "require": {
         "php": "^7.3|^8.0",
