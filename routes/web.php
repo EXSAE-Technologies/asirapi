@@ -17,6 +17,11 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->group(['prefix'=>'/system'],function($router){
+    $router->post('/install','AppController@install');
+    $router->post('/system-restore','AppController@systemRestore');
+});
+
 $router->group(['prefix'=>'/payments'],function($router){
     $router->get('/all-wallets','PaymentsController@allWallets');
     $router->get('/all-transactions','PaymentsController@allTransactions');
