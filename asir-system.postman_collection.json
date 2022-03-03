@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "517429f5-3e03-4f8c-9c8d-270809e7b5a2",
+		"name": "asir-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "install",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{baseUrl}}/system/install",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"system",
+						"install"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "system restore",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{baseUrl}}/system/system-restore",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"system",
+						"system-restore"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "bearer;{{token}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
